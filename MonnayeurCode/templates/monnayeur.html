@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' href='static/css/style.css'>
+    <link rel='icon' href='static/img/dollarIcon.ico'>
+    <title>====> Monnayeur <====</title>
+</head>
+
+<body>
+    <div id='center'>
+        <div id='main'>
+            <img id='monnayeurImg' src='static/img/monnayeur.png' alt='Monnayeur'>
+            
+            <p id='name'>KIEFFER Léo TG05</p>
+            
+            <h1 id='title'>Monnayeur</h1>
+            
+            <div class='declencheur'>
+                <p></p>
+                <div class='redButton'>
+                    <span title='Appuyer pour payer'>
+                        <center><img src='static/img/redButton.png' alt='Red button' onclick='payer()'></center>
+                    </span>
+                </div>
+            </div>
+            
+            <div id='screen'>
+                <span id='screenTextTitle'>Veuillez choisir votre produit.</span>
+                <br>
+                <span id='screenText1'></span>
+                <br>
+                <br>
+                <span id='screenText2'></span>
+                <br>
+                <span class='choice' id='screenYes' onclick="choice('yes')"></span>
+                <span class='choice' id='screenNo' onclick='choice()'></span>
+            </div>
+            
+            <div class='list'>
+                <div class='item' id='1' onclick="itemSelected('café', '1')" onmouseover="mouseOver('1')" onmouseout="mouseOut('1')">
+                    Café
+                </div>
+                <div class='item' id='2' onclick="itemSelected('thé', '2')" onmouseover="mouseOver('2')" onmouseout="mouseOut('2')">
+                    Thé
+                </div>
+                <div class='item' id='3' onclick="itemSelected('jus de pomme', '3')" onmouseover="mouseOver('3')" onmouseout="mouseOut('3')">
+                    Jus de pomme
+                </div>
+                <div class='item' id='lastItem' onclick="itemSelected('chocolat chaud', 'lastItem')"onmouseover="mouseOver('lastItem')" onmouseout="mouseOut('lastItem')">
+                    <span>chocolat chaud</span>
+                </div>
+            </div>
+            
+            <div class='divPieces'>
+                <div id='1c' class='pieces' onclick='add(0.01)'>
+                    <span title='Pièce de 1 centime'>
+                        <img src='static/img/1c.png' alt='Pièce de 1 centime' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='2c' class='pieces' onclick='add(0.02)'>
+                    <span title='Pièce de 2 centimes'>
+                        <img src='static/img/2c.png' alt='Pièce de 2 centimes' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='5c' class='pieces' onclick='add(0.05)'>
+                    <span title='Pièce de 5 centimes'>
+                        <img src='static/img/5c.png' alt='Pièce de 5 centimes' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='10c' class='pieces' onclick='add(0.1)'>
+                    <span title='Pièce de 10 centimes'>
+                        <img src='static/img/10c.png' alt='Pièce de 10 centimes' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='20c' class='pieces' onclick='add(0.2)'>
+                    <span title='Pièce de 20 centimes'>
+                        <img src='static/img/20c.png' alt='Pièce de 20 centimes' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='50c' class='pieces' onclick='add(0.5)'>
+                    <span title='Pièce de 50 centimes'>
+                        <img src='static/img/50c.png' alt='Pièce de 50 centimes' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='1e' class='pieces' onclick='add(1)'>
+                    <span title='Pièce de 1€'>
+                        <img src='static/img/1e.png' alt='Pièce de 1 euro' height='80' width='80'>
+                    </span>
+                </div>
+
+                <div id='2e' class='pieces' onclick='add(2)'>
+                    <span title='Pièce de 2€'>
+                        <img src='static/img/2e.png' alt='Pièce de 2 euros' height='80' width='80'>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src='static/js/scripts.js'></script>
+</body>
+
+</html>
