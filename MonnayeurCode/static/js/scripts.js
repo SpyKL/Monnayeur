@@ -29,6 +29,9 @@ function payer() {
     } else if(aPayer > 0) {
         alert('Vous devez encore payer ' + aPayer + ' €.')
     } else {
+        sum *= 10000
+        sum = Math.round(sum)
+        sum /= 10000
         alert('Vous avez payé ' + sum + ' € avec les pièces suivantes : ' + tabPieces);
         piecesRendu()
     }
