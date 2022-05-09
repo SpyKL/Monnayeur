@@ -29,7 +29,7 @@ function payer() {
     } else if(aPayer > 0) {
         alert('Vous devez encore payer ' + aPayer + ' €.')
     } else {
-        alert('Vous avez payé ' + sum + ' € avec ' + tabPieces);
+        alert('Vous avez payé ' + sum + ' € avec les pièces suivantes : ' + tabPieces);
         piecesRendu()
     }
 }
@@ -92,7 +92,7 @@ function mouseOut(id) {
 function piecesRendu() {
     for(let i = 0; i < pieces.length; i++)
         {
-            while(pieces[i] < rendu) {
+            while(pieces[i] <= rendu) {
                 rendu -= pieces[i]
                 aRendre.push(pieces[i])
             }
