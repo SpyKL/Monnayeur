@@ -1,4 +1,4 @@
-let pieces = [2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01]
+const pieces = [2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01]
 let isItemSelected = false
 let iscolored = false
 let tabPieces = []
